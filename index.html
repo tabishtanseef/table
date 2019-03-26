@@ -86,6 +86,7 @@ font-size:18px;
 }
 .table-responsive {
     display:block;
+	min-width: rem-calc(640);
 }
 .sub{
 width:auto;
@@ -98,6 +99,13 @@ padding-top:15px;
 span{
 font-weight:bold;
 }
+.horizontal-scroll {
+  overflow: hidden;
+  overflow-x: auto;
+  clear: both;
+  width: 100%;
+}
+
 </style>
 </head>
 <body>
@@ -143,8 +151,8 @@ font-weight:bold;
 		<div class="col-sm-12" style="text-align:right;"><small><span style="color:green;">U</span>- Unlocked, <span style="color:red;">C</span>- Completed</small></div>
 	</div>
 	<div class="row sub" style="margin-top:2%;">
-		<div class="col-sm-12">
-			<table class="table table-responsive w-100 d-block d-md-table" style="">
+		<div class="col-sm-12 horizontal-scroll">
+			<table class="table table-responsive w-100 d-block d-md-table" style="width:100%;">
 				<thead>
 				
 				</thead>
