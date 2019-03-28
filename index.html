@@ -145,9 +145,9 @@ font-weight:bold;
   </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container-fluid old">
 	<div class="row" style="margin-top:2%;">
-		<div class="col-sm-12"><h4></h4></div>
+		<div class="col-sm-12"><h4><button onclick="show()" >Play Tut</button></h4></div>
 		<div class="col-sm-12" style="text-align:right;"><small><span style="color:green;">U</span>- Unlocked, <span style="color:red;">C</span>- Completed</small></div>
 	</div>
 	<div class="row sub" style="margin-top:2%;">
@@ -368,12 +368,25 @@ font-weight:bold;
 	</div>
 </div>
 
-
+<div class="new hidden">
+<button onclick="go()" >Hide</button>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9I8ACNxgmDs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <script src="js/classie.js"></script>
 <script src="js/progressButton.js"></script>
 <script src="js/main.js"></script>
 <script>
+function go(){
+$('.new').addClass('hidden');
+$('.old').removeClass('hidden');
+
+}
+function show(){
+$('.old').addClass('hidden');
+$('.new').removeClass('hidden');
+
+}
 </script>
 </body>
 </html>
